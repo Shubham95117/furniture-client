@@ -1,0 +1,12 @@
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8; /* Example background */
+}
+
+.banner-image {
+  max-width: 100%;
+  height: auto;
+}

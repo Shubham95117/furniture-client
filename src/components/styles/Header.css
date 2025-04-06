@@ -1,0 +1,104 @@
+/* Main header container: logo, search bar, and user actions in the same row */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #fff; /* Optional, change background as needed */
+}
+
+/* Left section: contains logo and search bar */
+.header-left {
+  display: flex;
+  align-items: center;
+  flex-basis: 60%;
+}
+
+/* Logo styling: fixed width of 184px */
+.logo {
+  width: 184px;
+}
+
+.logo img {
+  width: 100%;
+  height: 50px;
+}
+
+/* Search bar styling: take the remaining space with a left margin */
+.search-bar {
+  margin-left: 20px;
+  flex: 1; /* This makes the search bar expand to fill the area */
+}
+
+/* User actions styling: align links to the right */
+.user-actions {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 40px;
+  margin-left: 40px;
+  /* Optionally, add some spacing if needed */
+}
+
+.user-actions a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.user-actions a:hover {
+  color: #0093dd;
+}
+/* src/styles/Header.css */
+
+.top-nav {
+  display: flex;
+  justify-content: flex-end; /* Moves nav items to the right */
+  align-items: center; /* Vertically centers nav items */
+  padding: 10px 20px; /* Optional padding for spacing */
+  background-color: #fff; /* Optional background color */
+  font-family: sans-serif; /* Optional font styling */
+}
+
+.top-nav a {
+  margin-left: 15px; /* Spacing between links */
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Default link color */
+  font-size: 16px; /* Font size for nav links */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.top-nav a:hover {
+  color: #0093dd; /* Change color on hover, adjust as needed */
+}
+
+.top-nav a.active {
+  color: #0093dd; /* Active link color */
+}
+/* Search bar container */
+.search-bar {
+  width: 100%;
+  position: relative;
+  border-radius: 45px;
+}
+
+/* Search bar input: expand to take full width */
+.search-bar input {
+  width: 100%;
+  padding: 8px 40px 8px 10px; /* Adjust padding as needed */
+  border: 1px solid #ccc;
+  border-radius: 45px; /* Border radius set to 45px */
+  box-sizing: border-box; /* Ensure padding is contained */
+}
+
+/* Search icon styling: position the icon inside the search bar */
+.search-bar .search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+}

@@ -1,0 +1,21 @@
+/* megaMenu.css */
+
+/* The container for your mega menu should be absolutely positioned so that 
+   it overlays other content without affecting their layout. */
+.mega-menu-dropdown {
+  position: absolute;
+  top: 150px; /* adjust according to your header height */
+  left: 0;
+  width: 100%;
+  background: #fff;
+  /* Choose a z-index relative to the slider. 
+      For example, if you want the mega menu to appear on top of the slider: */
+  z-index: 1000;
+  /* Alternatively, if you want the slider to remain above the mega menu, lower this */
+}
+
+/* The slider container might need an explicit stacking context too */
+.slider-container {
+  position: relative;
+  z-index: 500; /* Adjust this value as needed */
+}

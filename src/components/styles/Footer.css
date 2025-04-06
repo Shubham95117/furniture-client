@@ -1,0 +1,132 @@
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section a {
+  color: #333;
+  text-decoration: none;
+}
+.footer-icons {
+  display: flex;
+  gap: 15px; /* Adds spacing between icons */
+}
+
+.footer-icons i {
+  font-size: 24px; /* Increases icon size */
+  color: #333; /* Default icon color */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Individual colors */
+.footer-icons .fa-facebook {
+  color: #1877f2;
+}
+
+.footer-icons .fa-instagram {
+  color: #e4405f;
+}
+
+.footer-icons .fa-youtube {
+  color: #ff0000;
+}
+
+/* Hover effects */
+.footer-icons i:hover {
+  color: #000; /* Darker on hover */
+  transform: scale(1.2); /* Slight zoom effect */
+}
+.payment-options {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.payment-options p {
+  margin-left: 25px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.payment-options span {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.payment-options p {
+  display: flex;
+  gap: 15px; /* Spacing between icons */
+}
+
+.payment-options i {
+  font-size: 32px; /* Adjust icon size */
+  color: #333; /* Default icon color */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Individual icon colors */
+.payment-options .fa-cc-visa {
+  color: #1a1f71;
+}
+
+.payment-options .fa-cc-mastercard {
+  color: #eb001b;
+}
+
+.payment-options .fa-google-play {
+  color: #34a853;
+}
+
+.payment-options .fa-cc-amex {
+  color: #007bc1;
+}
+
+/* Hover effects */
+.payment-options i:hover {
+  color: #000;
+  transform: scale(1.2);
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #191818;
+  margin: 20px 0;
+}
