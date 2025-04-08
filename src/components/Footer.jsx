@@ -17,11 +17,15 @@ const Footer = () => {
         <h3>About Us</h3>
         <ul>
           <Link to="/about">About Nilkamal</Link>
-          <li style={{ pointerEvents: "none", cursor: "not-allowed" }}>
+          <li
+            style={{
+              cursor: "not-allowed",
+            }}
+          >
             Social Impact
           </li>
           <li>Contact Us</li>
-          <li>FAQ's</li>
+          <li style={{ cursor: "not-allowed" }}>FAQ's</li>
           <li>Feedback</li>
         </ul>
       </div>
@@ -34,7 +38,6 @@ const Footer = () => {
           <li>Privacy Policy</li>
           <li>Franchise Enquiry</li>
           <li>Purchase & Returns</li>
-          <li>Downloads</li>
         </ul>
       </div>
 
