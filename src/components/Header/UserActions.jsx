@@ -1,8 +1,11 @@
 // src/components/UserActions.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-// import "../styles/Header.css";
+import { useSelector } from "react-redux";
+
 const UserActions = () => {
+  const { user } = useSelector((state) => state.auth);
+
   return (
     <div className="user-actions">
       <Link to="/best-deal" className="best-deal" style={{ color: "#0093dd" }}>
@@ -14,7 +17,11 @@ const UserActions = () => {
       <Link to="/cart" className="cart-link">
         <i className="fa-solid fa-shopping-cart"></i> Cart
       </Link>
-      <Link to="/login">Login / Register</Link>
+      {user && user.token ? (
+        <Link to="/profile">My Account</Link>
+      ) : (
+        <Link to="/login">Login / Register</Link>
+      )}
     </div>
   );
 };

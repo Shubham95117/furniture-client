@@ -11,6 +11,7 @@
   /* Choose a z-index relative to the slider. 
       For example, if you want the mega menu to appear on top of the slider: */
   z-index: 1000;
+  border: 0px;
   /* Alternatively, if you want the slider to remain above the mega menu, lower this */
 }
 
@@ -18,4 +19,15 @@
 .slider-container {
   position: relative;
   z-index: 500; /* Adjust this value as needed */
+}
+.mega-menu-dropdown .main-category {
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Change color on hover for main categories */
+.mega-menu-dropdown .main-category:hover {
+  color: #bcc6cb; /* Adjust color as needed */
+  background-color: #0093dd;
 }

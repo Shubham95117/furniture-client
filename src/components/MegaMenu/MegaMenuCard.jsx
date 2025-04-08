@@ -15,7 +15,7 @@ const MegaMenuCard = ({ activeCategory }) => {
 
   return (
     <div className="mega-menu-dropdown">
-      <Container className="mt-3">
+      <Container className="mt-3" style={{ color: "red" }}>
         <Card className="p-3">
           <Row>
             {/* Column 1: Main Categories */}
@@ -27,6 +27,7 @@ const MegaMenuCard = ({ activeCategory }) => {
                     active={selectedMain === cat}
                     onMouseEnter={() => setSelectedMain(cat)}
                     style={{ cursor: "pointer" }}
+                    className="main-category"
                   >
                     {cat}
                   </ListGroup.Item>

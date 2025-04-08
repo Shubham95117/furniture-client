@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/Footer.css";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -15,8 +16,10 @@ const Footer = () => {
       <div className="footer-section">
         <h3>About Us</h3>
         <ul>
-          <li>About Nilkamal</li>
-          <li>Social Impact</li>
+          <Link to="/about">About Nilkamal</Link>
+          <li style={{ pointerEvents: "none", cursor: "not-allowed" }}>
+            Social Impact
+          </li>
           <li>Contact Us</li>
           <li>FAQ's</li>
           <li>Feedback</li>
